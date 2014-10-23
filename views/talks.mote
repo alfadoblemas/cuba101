@@ -1,0 +1,22 @@
+<div class="panel">
+  <h1>New talk</h1>
+
+  <form action="/talks" method="post">
+    <input type="text" name="talk[title]" placeholder="title">
+    <textarea name="talk[description]" placeholder="description"></textarea>
+    <input type="submit" value="Create talk">
+  </form>
+</div>
+
+<div class="panel">
+  <h1>Talks</h1>
+
+  % talks.each do |talk|
+    <p>
+      <a href="/talks/{{ talk.id }}">{{ talk.title }}</a>
+    </p>
+    <p>
+      {{ talk.description }}
+    </p>
+  % end
+</div>

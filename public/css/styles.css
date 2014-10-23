@@ -1,0 +1,156 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3F3E3D;
+}
+
+body {
+  background: #ffffff;
+  margin: auto;
+  padding: 0;
+  width: 860px;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  display: inline;
+}
+
+input {
+  display: block;
+  width: 236px;
+  height: 38px;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 0 10px;
+  outline: none;
+  font-size: 17px;
+}
+
+textarea {
+  width: 236px;
+  height: 100px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 17px;
+  border-radius: 3px;
+  border: 1px solid #d2d2d2;
+}
+
+input:focus {
+  background: #FFFDF2;
+}
+
+input[type="submit"] {
+  height: 36px;
+  width: auto;
+  border: 1px solid #4cae4c;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #5cb85c;
+}
+
+a {
+  text-decoration: none;
+  color: #58b84e;
+  text-shadow: #58b84e 0 0 1px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#content img {
+  border-radius: 6px;
+  float: left;
+}
+
+#content div.panel {
+  border: 1px solid #d2d2d2;
+  background: white;
+  margin: 0;
+  margin-bottom: 29px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#content div.panel.right {
+  width: 303px;
+  height: 313px;
+  float: right;
+}
+
+#content div.panel.right textarea.froggerText {
+  width: 249px;
+  height: 160px;
+  border: 1px solid #d2d2d2;
+}
+
+#content div.panel.left {
+  width: 533px;
+  float: left;
+}
+
+#content div.panel.left div.froggerWrapper {
+  padding: 15px 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+#content div.panel.left div.froggerWrapper:last-child {
+  border: none;
+}
+
+#content div.panel.left div.froggerWrapper span.name {
+  font-size: 18px;
+  color: #58B84E;
+}
+
+#content div.panel.left div.froggerWrapper span.time {
+  font-size: 12px;
+  color: #CCC;
+}
+
+#content div.panel.left div.froggerWrapper img.avatar {
+  margin: 0 19px 0 20px;
+  float: left;
+}
+
+#content div.panel.left div.froggerWrapper p {
+  margin: 5px 50px 0 90px;
+  padding: 0;
+  text-align: justify;
+  line-height: 1.5;
+  color: #3f3e3d;
+  text-shadow: #3f3e3d 0 0 1px;
+}
+
+#content div.panel * {
+  margin: 6px 0;
+}
+
+#content div.panel form {
+  padding: 10px 20px;
+}
+
+#content div.panel h1 {
+  border-bottom: 1px solid #D2D2D2;
+  margin: 5px 0;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 13px 23px;
+  height: 23px;
+}
+
+#content div.panel p {
+  padding: 0 24px;
+  margin: 18px 0;
+}

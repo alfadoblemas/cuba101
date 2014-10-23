@@ -1,0 +1,31 @@
+<div class="panel">
+  <h1>{{ talk.title }}</h1>
+
+  <p>
+    {{ talk.description }}
+  </p>
+</div>
+
+<div class="panel">
+  <h1>New Feedback</h1>
+
+  <form action="/talks/{{ talk.id }}/feedbacks" method="post">
+    <textarea name="feedback[suggestion]" placeholder="Share your thoughts here"></textarea>
+    <input type="text" name="feedback[name]" placeholder="name (optional)">
+    <input type="text" name="feedback[email]" placeholder="email (optional)">
+    <input type="submit" value="Create feedback">
+  </form>
+</div>
+
+<div class="panel">
+  <h1>Recent Feedback</h1>
+
+  % talk.feedbacks.each do |feedback|
+    <p>
+      {{ feedback.name }} — {{ feedback.email }}
+    </p>
+    <p>
+      {{ feedback.suggestion }}
+    </p>
+  % end
+</div>
